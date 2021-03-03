@@ -1,8 +1,17 @@
 const express = require('express')
+
+// Init app - an instance for express 
 const app = express()
- 
+
+// get method route
+// respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
-  res.send('<h1>Hello World</h1>')
+  res.send('<script>console.log("Hello World!")</script>')
 })
- 
-app.listen(3000)
+
+// other route types - post, put, delete
+app.listen(3000, function(){
+  console.log('Server started on port 3000...')
+})
+
+// dom - document object model the html that the browser is rendering (the tree of elements)
