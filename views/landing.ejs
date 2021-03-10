@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="jumbotron" style="text-align: center">
+    <h1>Hey Ma, I'm a chef now...</h1>
+        <h2>Recipes I've made:</h2>
+        <form action="/recipes" method="POST">
+            <p>Recipe Name: <input type="text" class="form-control"  name = "recipeName" placeholder = "Recipe Name"></p>
+            <p>Recipe Picture: <input type="text" class="form-control" name = "recipeImage" placeholder="Recipe Image URL"></p>
+            <!-- <a href="/recipes"><button type="button" class="btn btn-primary">Add to my collection</button></a> -->
+            <input type="submit" class="btn btn-primary" value="Add to My collection" src="/recipes">
+            <br>
+            <a href="/recipes"><button type="button" class="btn btn-link">My recipes</button></a>
+        </form>
+    </div>
+    </div>
