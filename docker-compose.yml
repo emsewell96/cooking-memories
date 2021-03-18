@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:11.5-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: cooking
+      POSTGRES_USER: em
+      POSTGRES_PASSWORD: em
+    ports:
+      - 5433:5432
+    networks:
+      - dev
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
+
+networks:
+  dev:
