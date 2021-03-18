@@ -2,14 +2,14 @@ version: '3.7'
 
 services:
   postgres:
-    image: public.ecr.aws/peakon/postgres
+    image: postgres:11.5-alpine
     restart: always
     environment:
       POSTGRES_DB: cooking
       POSTGRES_USER: em
       POSTGRES_PASSWORD: em
     ports:
-      - 5432:5432
+      - 5433:5432
     networks:
       - dev
     volumes:
